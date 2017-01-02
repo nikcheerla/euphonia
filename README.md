@@ -13,9 +13,9 @@ generators.py houses general code for generating batches of "data" that is fed t
 
 models.py houses abstract code for Keras models that learn from/train on data from a generator.
 
-See pitch_guess_model.py and state_prediction_model.py for an example of how it all fits together! pitch_guess model tries to predict the pitch of the next note given the sequence of pitches of the previous 50 pitches, and it achieves a bit of success (an example generated piece is in the results folder), although it still sounds pretty bad. state_prediction_model.py tries to ambitiously predict the entire state beat by beat, and fails miserably ;)
+See pitch_guess_model.py and state_prediction_model.py for an example of how it all fits together! pitch_guess model tries to predict the pitch of the next note given the sequence of pitches of the previous 50 pitches, and it achieves a bit of success (an example generated piece is in the results folder), although it still sounds pretty terrible. state_prediction_model.py tries to ambitiously predict the entire state beat by beat, and fails miserably ;)
 
-The most useful part of this code is probably representations.py, as it puts MIDI 
+The most useful part of this code is probably representations.py, as it puts MIDI files in an ML-friendly format.
 
 
 
