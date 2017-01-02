@@ -1,3 +1,5 @@
+"""Crawls all files from the piano-midi archive and saves them to the music directory."""
+
 
 import re, urllib, time, sys, subprocess
 def getChildLinks(link):
