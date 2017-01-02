@@ -6,7 +6,12 @@ Dependencies:
 - the latest versions of Keras (```pip install git+https://github.com/fchollet/keras```), and Theano.
 - MIDI file parsing code (```pip install git+https://github.com/vishnubob/python-midi```)
 
+Setup:
+
+Run music/music_crawler.py to download a lot of MIDI files from www.piano-midi.de to the music/ directory. Then you can train and run various models on music data.
+
 Usage:
+
 representations.py houses the MIDI music representation code. This code allows you to represent MIDI files in a variety of different "formats", which are 2D matrices. These matrices can be modified and saved back to MIDI files. For example, StateMatrix converts MIDI files to a 2D Numpy array format somewhat like this Youtube video (https://www.youtube.com/watch?v=xh3FMTff5nY). Examples of these representations are stored in the results/ folder. This data can then be used to train ML models.
 
 generators.py houses general code for generating batches of "data" that is fed to a Keras model.
